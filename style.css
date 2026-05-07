@@ -276,6 +276,10 @@ p {
 
 .trainer-img {
   aspect-ratio: 4 / 5;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .trainer-deco-square {
