@@ -1,820 +1,392 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KOTA TANIUCHI | Personal Trainer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;700&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>本気の身体改造、90日で。 | パーソナルトレーニング</title>
+  <meta name="description" content="働く男のための、結果にコミットするパーソナルトレーニング。無料Zoom問診受付中。" />
+
+  <!-- Bootstrap 5.3.2 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Original stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <a href="#" class="nav-logo">KT TRAINER</a>
-    <ul class="nav-links">
-      <li><a href="#problems">Problems</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#youtube">Interviews</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#cta" class="nav-cta">無料カウンセリング</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid-lines"></div>
-
-    <div class="hero-left">
-      <div class="hero-tag">Tokyo Based Personal Trainer</div>
-      <h1 class="hero-title">
-        YOUR<br>
-        <span class="outline">BEST</span><br>
-        <span class="gradient">BODY</span>
-      </h1>
-      <p class="hero-sub">
-        <strong>谷内 康太（Kota Taniuchi）</strong><br>
-        細身で自信ゼロだった自分が、解剖学と食事術で<br>
-        フィジーク優勝まで辿り着いた。<br>
-        その最短ルートを、体を変えたいサラリーマンへ。<br>
-        正しい知識で、体もマインドも自分らしく変えよう。
-      </p>
-      <div class="hero-buttons">
-        <a href="#cta" class="btn-primary">
-          Zoomカウンセリング申込 →
-        </a>
-        <a href="#results" class="btn-secondary">
-          実績を見る
-        </a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-num">検討200+</div>
-          <div class="hero-stat-label">検討クライアント</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num">検討98%</div>
-          <div class="hero-stat-label">検討目標達成率</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num">検討8年</div>
-          <div class="hero-stat-label">検討指導経験</div>
-        </div>
-      </div>
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero" aria-label="ヒーローバナー">
+    <div class="hero-img placeholder-img" role="img" aria-label="ヒーロー画像">
+      [ヒーロー画像：力強くトレーニングする男性のビジュアル]
     </div>
-
-    <div class="hero-right">
-      <div class="hero-image-container">
-        <div class="hero-image-bg"></div>
-        <div class="hero-image-frame"></div>
-        <div class="hero-image-inner">
-          <div class="hero-photo-placeholder">
-            <img
-              src="trainner.jpeg"
-              alt="Kota Taniuchi — Certified Personal Trainer"
-              class="hero-photo"
-              loading="lazy"
-              decoding="async"
-              width="428"
-              height="548"
-            >
-          </div>
-          <div class="hero-name-badge">
-            <div class="hero-name">KOTA TANIUCHI</div>
-            <div class="hero-name-sub">Certified Personal Trainer</div>
-          </div>
-        </div>
-        <div class="hero-badge">
-          <div class="hero-badge-num">NSCA</div>
-          <div class="hero-badge-text">CERTIFIED</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee-section">
-    <div class="marquee-track">
-      <div class="marquee-item">PERSONAL TRAINING <span class="marquee-dot"></span></div>
-      <div class="marquee-item">NUTRITION COACHING <span class="marquee-dot"></span></div>
-      <div class="marquee-item">BODY RECOMPOSITION <span class="marquee-dot"></span></div>
-      <div class="marquee-item">STRENGTH TRAINING <span class="marquee-dot"></span></div>
-      <div class="marquee-item">ONLINE COACHING <span class="marquee-dot"></span></div>
-      <div class="marquee-item">LIFESTYLE DESIGN <span class="marquee-dot"></span></div>
-      <!-- duplicate for seamless loop -->
-      <div class="marquee-item">PERSONAL TRAINING <span class="marquee-dot"></span></div>
-      <div class="marquee-item">NUTRITION COACHING <span class="marquee-dot"></span></div>
-      <div class="marquee-item">BODY RECOMPOSITION <span class="marquee-dot"></span></div>
-      <div class="marquee-item">STRENGTH TRAINING <span class="marquee-dot"></span></div>
-      <div class="marquee-item">ONLINE COACHING <span class="marquee-dot"></span></div>
-      <div class="marquee-item">LIFESTYLE DESIGN <span class="marquee-dot"></span></div>
-    </div>
-  </div>
-
-  <!-- PROBLEMS -->
-  <section id="problems">
-    <div class="problems-header reveal">
-      <div class="section-tag">Problems</div>
-      <h2 class="section-title">
-        こんな悩み、<br>
-        <span class="outline">ありませんか？</span>
-      </h2>
-      <p class="problems-lead">
-        一人で頑張っても結果が出ない。その原因は「情報過多」と「取捨選択のミス」にあります。
-      </p>
-    </div>
-    <div class="problems-grid">
-      <div class="problem-card reveal">
-        <div class="problem-num">01</div>
-        <div class="problem-icon">💪</div>
-        <h3 class="problem-title">ジムに通っても変わらない</h3>
-        <p class="problem-desc">自己流のトレーニングを続けているが、半年経っても体つきが変わらず自信を失いかけている。</p>
-      </div>
-      <div class="problem-card reveal">
-        <div class="problem-num">02</div>
-        <div class="problem-icon">🍱</div>
-        <h3 class="problem-title">食事管理が続かない</h3>
-        <p class="problem-desc">仕事が忙しくコンビニ・外食ばかり。PFCバランスや糖質制限など、何を信じればいいか迷子状態。</p>
-      </div>
-      <div class="problem-card reveal">
-        <div class="problem-num">03</div>
-        <div class="problem-icon">📉</div>
-        <h3 class="problem-title">モチベが続かない</h3>
-        <p class="problem-desc">最初は気合が入っていたのに、1ヶ月で挫折。一人では「やる理由」が薄れてしまう。</p>
-      </div>
-      <div class="problem-card reveal">
-        <div class="problem-num">04</div>
-        <div class="problem-icon">❓</div>
-        <h3 class="problem-title">情報が多すぎて迷う</h3>
-        <p class="problem-desc">SNSやYouTubeで正反対の情報が飛び交い、何が正解かわからず結局動けない。</p>
-      </div>
-      <div class="problem-card reveal">
-        <div class="problem-num">05</div>
-        <div class="problem-icon">⏰</div>
-        <h3 class="problem-title">時間がない</h3>
-        <p class="problem-desc">残業・出張・会食続きで、ジムに行く時間もまともに食事を作る時間も確保できない。</p>
-      </div>
-      <div class="problem-card reveal">
-        <div class="problem-num">06</div>
-        <div class="problem-icon">😔</div>
-        <h3 class="problem-title">自分に自信が持てない</h3>
-        <p class="problem-desc">体型がコンプレックス。着たい服も着られず、鏡を見るのが嫌になっている。</p>
-      </div>
-    </div>
-    <div class="problems-footer reveal">
-      <p class="problems-conclusion">
-        <span class="highlight">その悩み、"正しい順番"で解決できます。</span>
-      </p>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="about-visual reveal">
-      <div class="about-img-grid">
-        <div class="about-img-card">
-          <div class="img-placeholder tall">写真1
-          </div>
-        </div>
-        <div class="about-img-card">
-          <div class="img-placeholder short">写真2</div>
-        </div>
-        <div class="about-img-card">
-          <div class="img-placeholder short">写真3</div>
-        </div>
-      </div>
-      <div class="about-cert">
-        <div class="about-cert-num">8</div>
-        <div class="about-cert-text">YEARS EXP.</div>
-      </div>
-    </div>
-
-    <div class="about-content reveal">
-      <div class="section-tag">About Me</div>
-      <h2 class="section-title">
-        迷いを断つ。<br>
-        <span class="outline">MEETS</span><br>
-        最短で変わる。
-      </h2>
-      <p class="about-lead">
-        細身だった私が、フィジーク優勝で掴んだ「本当に必要なこと」
-      </p>
-      <p class="about-body">
-        解剖学と食事を一から学び直し、フィジークの大会で優勝。<br>
-        体とマインドを変えることができました。<br><br>
-        忙しくて、迷ってて、でも本気で変わりたい。<br>
-        そんなサラリーマンに、遠回りゼロの「取捨選択」を届けます。
-      </p>
-      <div class="about-skills">
-        <div class="skill-item">
-          <div class="skill-icon">写真4</div>
-          <div class="skill-name">フィジーク優勝</div>
-          <div class="skill-desc">全日本フィジーク選手権優勝</div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-icon">写真5</div>
-          <div class="skill-name">解剖学×筋トレ</div>
-          <div class="skill-desc">「なぜこの動きか」を徹底的にわかりやすく</div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-icon">写真6</div>
-          <div class="skill-name">忙しい人の食事術</div>
-          <div class="skill-desc">コンビニ・外食でも使える実践的な知識</div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-icon">写真7</div>
-          <div class="skill-name">最短ルート設計</div>
-          <div class="skill-desc">情報の取捨選択で、迷いをゼロにする</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section id="benefits">
-    <div class="benefits-header reveal">
-      <div class="section-tag">Benefits</div>
-      <h2 class="section-title">
-        手に入る<br>
-        <span class="outline">FUTURE</span>
-      </h2>
-      <p class="benefits-lead">
-        指導を受けた先に待っている、6つの「変化」
-      </p>
-    </div>
-    <div class="benefits-grid">
-      <div class="benefit-card reveal">
-        <div class="benefit-num">01</div>
-        <h3 class="benefit-title">理想の体型を手に入れる</h3>
-        <p class="benefit-desc">細マッチョ・フィジーク体型など、あなたの目標に合わせた体を最短で構築。Tシャツ1枚で自信が持てる体へ。</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-num">02</div>
-        <h3 class="benefit-title">一生モノの知識を得る</h3>
-        <p class="benefit-desc">解剖学に基づいた「なぜこの動きが効くのか」を理解。指導終了後も自分で体をデザインできる力が身につく。</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-num">03</div>
-        <h3 class="benefit-title">食事の迷いがゼロになる</h3>
-        <p class="benefit-desc">コンビニ・外食・会食でも使える実践的な食事術。数字を追うだけの食事管理から卒業。</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-num">04</div>
-        <h3 class="benefit-title">時間効率が劇的に上がる</h3>
-        <p class="benefit-desc">週2〜3回、1回60分で十分。忙しいサラリーマンでも無理なく続けられる最短ルートを提供。</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-num">05</div>
-        <h3 class="benefit-title">マインドが変わる</h3>
-        <p class="benefit-desc">体が変わると、仕事・恋愛・人生の全てが変わる。自己肯定感と行動力が劇的にアップ。</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-num">06</div>
-        <h3 class="benefit-title">仕事のパフォーマンスUP</h3>
-        <p class="benefit-desc">正しいトレーニングと食事で、睡眠の質・集中力・スタミナが向上。仕事の成果も自然と伸びる。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- MID CTA BANNER -->
-  <section id="mid-cta">
-    <div class="mid-cta-bg"></div>
-    <div class="mid-cta-content reveal">
-      <div class="mid-cta-text">
-        <div class="section-tag" style="color:var(--gold);">Limited Offer</div>
-        <h3 class="mid-cta-title">まずは<span class="mid-cta-highlight">無料Zoomカウンセリング</span>から</h3>
-        <p class="mid-cta-sub">60分のヒアリングで、あなたに最適な最短ルートをご提案します。</p>
-      </div>
-      <a href="#cta" class="mid-cta-btn">
-        Zoomカウンセリング申込 →
-      </a>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="services-header reveal">
-      <div>
-        <div class="section-tag">Services</div>
-        <h2 class="section-title">
-          TRAINING<br>
-          <span class="outline">PROGRAMS</span>
-        </h2>
-      </div>
-      <p style="max-width:360px; color:var(--gray); font-size:14px; line-height:1.8;">
-        検討目標・ライフスタイル・体質に合わせた<br>3つのプランをご用意しています。
-      </p>
-    </div>
-
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <span class="service-num">01</span>
-        <span class="service-icon">写真8</span>
-        <div class="service-name">検討PERSONAL SESSION</div>
-        <p class="service-desc">検討完全マンツーマンでのパーソナルトレーニング。フォーム指導から栄養アドバイスまで、あなただけのプログラムで集中指導します。</p>
-        <div class="service-price">
-          <span class="service-price-num">¥12,000</span>
-          <span class="service-price-label">/ 60分</span>
-        </div>
-        <div class="service-tag">人気No.1</div>
-      </div>
-
-      <div class="service-card reveal">
-        <span class="service-num">02</span>
-        <span class="service-icon">写真9</span>
-        <div class="service-name">検討ONLINE COACHING</div>
-        <p class="service-desc">検討場所を選ばないオンラインコーチング。毎月のプログラム更新、週次チェックイン、LINEでの24時間サポートで継続をバックアップ。</p>
-        <div class="service-price">
-          <span class="service-price-num">¥29,800</span>
-          <span class="service-price-label">/ 月額</span>
-        </div>
-        <div class="service-tag">コスパ最高</div>
-      </div>
-
-      <div class="service-card reveal">
-        <span class="service-num">03</span>
-        <span class="service-icon">写真10</span>
-        <div class="service-name">検討PREMIUM PLAN</div>
-        <p class="service-desc">検討月4回のパーソナルセッション＋オンラインコーチングの完全統合プラン。最短・最速で理想の体を手に入れたい方に。</p>
-        <div class="service-price">
-          <span class="service-price-num">¥68,000</span>
-          <span class="service-price-label">/ 月額</span>
-        </div>
-        <div class="service-tag">最短最速</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESULTS -->
-  <section id="results">
-    <div class="results-intro">
-      <div class="results-text reveal">
-        <div class="section-tag">Results</div>
-        <h2 class="section-title">
-          REAL<br>
-          <span class="outline">RESULTS</span><br>
-          MATTER
-        </h2>
-        <p class="results-body" style="margin-top:24px;">
-          検討数字は嘘をつきません。私のクライアントが実際に達成した結果をご覧ください。継続的な科学的アプローチで、再現性のある変化を生み出します。
+    <div class="hero-overlay">
+      <div class="container">
+        <span class="hero-tag">PERSONAL TRAINING</span>
+        <h1 class="hero-title">
+          本気の身体改造、<span class="accent">90日</span>で。
+        </h1>
+        <p class="hero-sub">
+          働く男のための、結果にコミットするパーソナルトレーニング。<br />
+          言い訳のない身体を、ここから始めよう。
         </p>
       </div>
-      <div class="results-numbers reveal">
-        <div class="result-block">
-          <div class="result-num">検討200+</div>
-          <div class="result-label">検討累計クライアント数</div>
-        </div>
-        <div class="result-block">
-          <div class="result-num">検討98%</div>
-          <div class="result-label">検討目標達成率</div>
-        </div>
-        <div class="result-block">
-          <div class="result-num">検討-15kg</div>
-          <div class="result-label">検討最大ダイエット実績</div>
-        </div>
-        <div class="result-block">
-          <div class="result-num">検討4.9★</div>
-          <div class="result-label">検討平均満足度評価</div>
-        </div>
-      </div>
     </div>
+    <div class="hero-bottom-bar"></div>
+  </section>
 
-    <div class="transformations reveal">
-      <div class="transform-card">
-        <div class="transform-before-after">
-          <div class="ba-panel before">
-            <div class="ba-label before">BEFORE</div>
-            🙅
-          </div>
-          <div class="ba-panel after">
-            <div class="ba-label after">AFTER</div>
-            💪
-          </div>
-        </div>
-        <div class="transform-info">
-          <div class="transform-name">Aさん（32歳・男性）</div>
-          <div class="transform-result">体脂肪 24% → 12% ／ 筋肉量 +6kg</div>
-          <div class="transform-period">期間：4ヶ月</div>
-        </div>
-      </div>
-
-      <div class="transform-card">
-        <div class="transform-before-after">
-          <div class="ba-panel before">
-            <div class="ba-label before">BEFORE</div>
-            🙍‍♀️
-          </div>
-          <div class="ba-panel after">
-            <div class="ba-label after">AFTER</div>
-            🏃‍♀️
+  <!-- ============ 2. TRAINER ============ -->
+  <section class="section trainer-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6">
+          <div class="trainer-img-wrap">
+            <div class="placeholder-img trainer-img" role="img" aria-label="トレーナー画像">
+              [トレーナー画像]
+            </div>
+            <div class="trainer-deco-square" aria-hidden="true"></div>
           </div>
         </div>
-        <div class="transform-info">
-          <div class="transform-name">Bさん（28歳・女性）</div>
-          <div class="transform-result">体重 -12kg ／ バスト・ヒップアップ</div>
-          <div class="transform-period">期間：6ヶ月</div>
-        </div>
-      </div>
-
-      <div class="transform-card">
-        <div class="transform-before-after">
-          <div class="ba-panel before">
-            <div class="ba-label before">BEFORE</div>
-            😓
+        <div class="col-md-6">
+          <div class="trainer-text">
+            <span class="mini-label">ABOUT TRAINER</span>
+            <h2 class="trainer-headline">
+              結果が出ないのは、<br />方法が間違っているから。
+            </h2>
+            <p class="body-text">
+              ダミーテキストです。トレーナーとしての経歴・理念・どんな相手を、どのように変えてきたかをここに記述してください。読者が「この人に任せたい」と思える内容に差し替えてください。
+            </p>
+            <p class="body-text">
+              ダミーテキストです。具体的なメソッドや、他のジムにはない強みを2段落目で語ってください。実績数値や受講者の声などを盛り込むと、より説得力が増します。
+            </p>
+            <!-- TODO: ここにGoogle FormのURLを貼り付け -->
+            <a href="#" class="cta-button">無料Zoom問診の登録はこちら</a>
           </div>
-          <div class="ba-panel after">
-            <div class="ba-label after">AFTER</div>
-            🔥
-          </div>
-        </div>
-        <div class="transform-info">
-          <div class="transform-name">Cさん（45歳・男性）</div>
-          <div class="transform-result">スクワット 60kg → 120kg ／ 体脂肪 -8%</div>
-          <div class="transform-period">期間：8ヶ月</div>
-        </div>
-      </div>
-
-      <div class="transform-card">
-        <div class="transform-before-after">
-          <div class="ba-panel before">
-            <div class="ba-label before">BEFORE</div>
-            😔
-          </div>
-          <div class="ba-panel after">
-            <div class="ba-label after">AFTER</div>
-            ✨
-          </div>
-        </div>
-        <div class="transform-info">
-          <div class="transform-name">Dさん（35歳・女性）</div>
-          <div class="transform-result">産後体型リカバリー ／ 体重 -9kg</div>
-          <div class="transform-period">期間：5ヶ月</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- YOUTUBE 対談 -->
-  <section id="youtube">
-    <div class="youtube-header reveal">
-      <div class="section-tag">Interviews</div>
-      <h2 class="section-title">
-        YOUTUBE<br>
-        <span class="outline">対談</span>
-      </h2>
-      <p class="youtube-lead">
-        実際のクライアントとの対談動画。<br>
-        リアルな「ビフォー・アフター」と本音の声をお届けします。
+  <!-- ============ 3. CONCERNS ============ -->
+  <section class="section concerns-section">
+    <div class="container">
+      <div class="section-title-block">
+        <span class="en-label">CONCERNS</span>
+        <div class="orange-line"></div>
+        <h2>こんな悩み、ありませんか？</h2>
+      </div>
+
+      <div class="row g-4 concerns-grid">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="concern-card">
+            <span class="concern-num">01</span>
+            <div class="placeholder-img concern-img" role="img" aria-label="困りごと画像 01">
+              [困りごと画像 01]
+            </div>
+            <h3 class="concern-title">無理な食事制限を<br />していませんか？</h3>
+            <p class="concern-desc">
+              無理な食事制限はリバウンドの原因です。正しい知識で、長く続く身体作りを。
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="concern-card">
+            <span class="concern-num">02</span>
+            <div class="placeholder-img concern-img" role="img" aria-label="困りごと画像 02">
+              [困りごと画像 02]
+            </div>
+            <h3 class="concern-title">自己流トレーニングで<br />結果が出ていない</h3>
+            <p class="concern-desc">
+              間違ったフォームや負荷設定では成果は出ません。正しいやり方を習得しましょう。
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="concern-card">
+            <span class="concern-num">03</span>
+            <div class="placeholder-img concern-img" role="img" aria-label="困りごと画像 03">
+              [困りごと画像 03]
+            </div>
+            <h3 class="concern-title">仕事が忙しく<br />時間が取れない</h3>
+            <p class="concern-desc">
+              短時間で最大の効果を出すメソッドで、忙しい会社員でも続けられます。
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="concern-card">
+            <span class="concern-num">04</span>
+            <div class="placeholder-img concern-img" role="img" aria-label="困りごと画像 04">
+              [困りごと画像 04]
+            </div>
+            <h3 class="concern-title">続ける自信が<br />持てない</h3>
+            <p class="concern-desc">
+              一人では続かないあなたへ。伴走するから、必ず最後までやり切れます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. METHOD ============ -->
+  <section class="section method-section">
+    <div class="method-circle method-circle-tr" aria-hidden="true"></div>
+    <div class="method-circle method-circle-bl" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-title-block method-title-block">
+        <span class="en-label">METHOD</span>
+        <div class="orange-line"></div>
+        <h2>正しい身体の作り方は、<br />これです。</h2>
+      </div>
+      <div class="method-text">
+        <p>
+          ダミーテキストです。あなたが提唱する「正しい身体の作り方」の核となる考え方をここに記述してください。読者が共感できる強いメッセージに差し替えてください。
+        </p>
+        <p>
+          ダミーテキストです。トレーニング理論、食事管理、生活習慣の3要素をどう組み合わせるかなど、具体的なメソッドの全体像を説明してください。
+        </p>
+        <p>
+          ダミーテキストです。最後に、このメソッドで得られる結果や、他のサービスとの違いを明確にしてください。読み終えた読者が次のCTAに進みたくなる流れを意識します。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. GIFT ============ -->
+  <section class="section gift-section">
+    <div class="container">
+      <div class="section-title-block">
+        <span class="en-label">GIFT</span>
+        <div class="orange-line"></div>
+        <h2>ご登録者限定プレゼント</h2>
+      </div>
+      <p class="gift-lead">
+        無料Zoom問診にご登録いただいた方全員に、<br />
+        私が実際に使用している<strong>3つのスプレッドシート</strong>をプレゼント！
       </p>
-    </div>
 
-    <div class="youtube-grid">
-      <div class="youtube-card reveal">
-        <div class="youtube-thumb">
-          <div class="youtube-play">▶</div>
-          <div class="youtube-duration">12:34</div>
+      <div class="gift-list">
+        <!-- Sheet 01 -->
+        <div class="gift-item">
+          <div class="gift-num-badge">01</div>
+          <h3 class="gift-name">生活管理スプレッドシート</h3>
+          <div class="placeholder-img gift-img" role="img" aria-label="生活管理スプレッドシート画像">
+            [生活管理シート画像]
+          </div>
+          <div class="gift-howto">
+            <span class="howto-label">HOW TO USE</span>
+            <p>
+              ダミーテキストです。シートの基本的な使い方をここに記述してください。日々の睡眠時間や生活リズムをどう記録するか具体的に説明します。
+            </p>
+            <p>
+              ダミーテキストです。記録を続けることで何が見えるようになるか、どう改善につなげるかの活用ポイントを2段落目で説明してください。
+            </p>
+          </div>
         </div>
-        <div class="youtube-info">
-          <h3 class="youtube-title">3ヶ月で体脂肪-10%を達成したYさんとの対談</h3>
-          <p class="youtube-meta">Yさん（34歳・IT企業勤務）</p>
+
+        <!-- Sheet 02 -->
+        <div class="gift-item">
+          <div class="gift-num-badge">02</div>
+          <h3 class="gift-name">食事管理スプレッドシート</h3>
+          <div class="placeholder-img gift-img" role="img" aria-label="食事管理スプレッドシート画像">
+            [食事管理シート画像]
+          </div>
+          <div class="gift-howto">
+            <span class="howto-label">HOW TO USE</span>
+            <p>
+              ダミーテキストです。食事内容・PFCバランスをどう入力するかをここに記述してください。
+            </p>
+            <p>
+              ダミーテキストです。シートが自動で算出する数値の見方、目標設定の調整方法を2段落目で説明してください。
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="youtube-card reveal">
-        <div class="youtube-thumb">
-          <div class="youtube-play">▶</div>
-          <div class="youtube-duration">15:02</div>
-        </div>
-        <div class="youtube-info">
-          <h3 class="youtube-title">産後-9kgリカバリー｜Sさんが語る継続のコツ</h3>
-          <p class="youtube-meta">Sさん（31歳・主婦）</p>
-        </div>
-      </div>
-      <div class="youtube-card reveal">
-        <div class="youtube-thumb">
-          <div class="youtube-play">▶</div>
-          <div class="youtube-duration">18:47</div>
-        </div>
-        <div class="youtube-info">
-          <h3 class="youtube-title">40代から始めた筋トレで人生が変わったTさん</h3>
-          <p class="youtube-meta">Tさん（42歳・管理職）</p>
-        </div>
-      </div>
-      <div class="youtube-card reveal">
-        <div class="youtube-thumb">
-          <div class="youtube-play">▶</div>
-          <div class="youtube-duration">09:21</div>
-        </div>
-        <div class="youtube-info">
-          <h3 class="youtube-title">フィジーク大会入賞｜Kさんのトレーニング論</h3>
-          <p class="youtube-meta">Kさん（29歳・営業職）</p>
-        </div>
-      </div>
-      <div class="youtube-card reveal">
-        <div class="youtube-thumb">
-          <div class="youtube-play">▶</div>
-          <div class="youtube-duration">14:15</div>
-        </div>
-        <div class="youtube-info">
-          <h3 class="youtube-title">忙しい経営者が週2回で理想体型をキープする方法</h3>
-          <p class="youtube-meta">Mさん（38歳・経営者）</p>
-        </div>
-      </div>
-      <div class="youtube-card reveal">
-        <div class="youtube-thumb">
-          <div class="youtube-play">▶</div>
-          <div class="youtube-duration">11:08</div>
-        </div>
-        <div class="youtube-info">
-          <h3 class="youtube-title">細身から+6kg増量｜本音で語るバルクアップ</h3>
-          <p class="youtube-meta">Nさん（26歳・エンジニア）</p>
+
+        <!-- Sheet 03 -->
+        <div class="gift-item">
+          <div class="gift-num-badge">03</div>
+          <h3 class="gift-name">トレーニング管理スプレッドシート</h3>
+          <div class="placeholder-img gift-img" role="img" aria-label="トレーニング管理スプレッドシート画像">
+            [トレーニング管理シート画像]
+          </div>
+          <div class="gift-howto">
+            <span class="howto-label">HOW TO USE</span>
+            <p>
+              ダミーテキストです。種目・重量・回数の記録ルール、進捗の見方をここに記述してください。
+            </p>
+            <p>
+              ダミーテキストです。シートを使って自分の成長をどう可視化するか、停滞期の見抜き方などを2段落目で説明してください。
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials">
-    <div class="testimonials-header reveal">
-      <div class="section-tag">Testimonials</div>
-      <h2 class="section-title">
-        CLIENT<br>
-        <span class="outline">VOICES</span>
-      </h2>
-    </div>
+  <!-- ============ 6. PROFILE ============ -->
+  <section class="section profile-section">
+    <div class="container">
+      <div class="section-title-block">
+        <span class="en-label">PROFILE</span>
+        <div class="orange-line"></div>
+        <h2>自己紹介</h2>
+      </div>
 
-    <div class="testimonials-grid">
-      <div class="testimonial-card reveal">
-        <div class="testimonial-quote">"</div>
-        <div class="stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      <div class="profile-name-block">
+        <span class="profile-name-en">YAMADA TARO</span>
+        <span class="profile-name-ja">山田 太郎</span>
+      </div>
+
+      <div class="profile-images">
+        <div class="placeholder-img profile-img" role="img" aria-label="自己紹介画像 01">
+          [プロフィール画像 01]
         </div>
-        <p class="testimonial-text">
-          他のジムで全然結果が出なかったのに、田中トレーナーのもとで<em>わずか3ヶ月で体脂肪を10%落とすことができました</em>。科学的なアプローチが本当に効果的でした。
+        <div class="placeholder-img profile-img" role="img" aria-label="自己紹介画像 02">
+          [プロフィール画像 02]
+        </div>
+      </div>
+
+      <div class="row profile-text-row g-4">
+        <div class="col-12 col-md-8">
+          <div class="profile-text">
+            <p>
+              ダミーテキストです。生い立ちや、なぜトレーナーを志したのかという原体験をここに記述してください。読者が共感できるストーリー仕立てが効果的です。
+            </p>
+            <p>
+              ダミーテキストです。これまでのキャリア、取得資格、指導してきた人数などの実績を2段落目に記述してください。
+            </p>
+            <p>
+              ダミーテキストです。指導において大切にしている価値観、こだわりを3段落目で語ってください。
+            </p>
+            <p>
+              ダミーテキストです。最後に、これからどんな人と一緒に身体を変えていきたいかというメッセージで締めてください。
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="placeholder-img profile-sub-img" role="img" aria-label="自己紹介サブ画像">
+            [プロフィールサブ画像]
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. FAQ ============ -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-title-block">
+        <span class="en-label">FAQ</span>
+        <div class="orange-line"></div>
+        <h2>よくある質問</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-card">
+          <div class="faq-q">
+            <span class="faq-mark q-mark">Q</span>
+            <p class="faq-text">どんなことが学べますか？</p>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark a-mark">A</span>
+            <p class="faq-text faq-answer-text">
+              回答内容がここに入ります。ダミーテキストですので、後ほど実際の回答に差し替えてください。
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <span class="faq-mark q-mark">Q</span>
+            <p class="faq-text">運動初心者でも大丈夫ですか？</p>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark a-mark">A</span>
+            <p class="faq-text faq-answer-text">
+              回答内容がここに入ります。ダミーテキストですので、後ほど実際の回答に差し替えてください。
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <span class="faq-mark q-mark">Q</span>
+            <p class="faq-text">どのくらいの期間で効果が出ますか？</p>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark a-mark">A</span>
+            <p class="faq-text faq-answer-text">
+              回答内容がここに入ります。ダミーテキストですので、後ほど実際の回答に差し替えてください。
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <span class="faq-mark q-mark">Q</span>
+            <p class="faq-text">仕事が忙しくても続けられますか？</p>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark a-mark">A</span>
+            <p class="faq-text faq-answer-text">
+              回答内容がここに入ります。ダミーテキストですので、後ほど実際の回答に差し替えてください。
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-q">
+            <span class="faq-mark q-mark">Q</span>
+            <p class="faq-text">料金はどのくらいですか？</p>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark a-mark">A</span>
+            <p class="faq-text faq-answer-text">
+              回答内容がここに入ります。ダミーテキストですので、後ほど実際の回答に差し替えてください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. FINAL CTA ============ -->
+  <section class="final-cta-section">
+    <span class="final-cta-bg-text" aria-hidden="true">JOIN US</span>
+    <div class="container">
+      <div class="final-cta-inner">
+        <h2 class="final-cta-title">今こそ、変わる時。</h2>
+        <p class="final-cta-sub">
+          まずは無料のZoom問診で、あなたの目標とお悩みをお聞かせください。<br />
+          最適なプランをご提案いたします。
         </p>
-        <div class="testimonial-divider"></div>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">👨</div>
-          <div>
-            <div class="testimonial-name">山田 健太郎</div>
-            <div class="testimonial-detail">会社員 / 34歳 / 6ヶ月継続中</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal">
-        <div class="testimonial-quote">"</div>
-        <div class="stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-        </div>
-        <p class="testimonial-text">
-          産後の体型回復を諦めていましたが、<em>丁寧な指導と食事管理で理想以上の体に戻れました</em>。子育て中でもオンラインで柔軟に対応してくれる点がとても助かっています。
-        </p>
-        <div class="testimonial-divider"></div>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">👩</div>
-          <div>
-            <div class="testimonial-name">鈴木 美咲</div>
-            <div class="testimonial-detail">主婦 / 31歳 / 5ヶ月継続中</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card reveal">
-        <div class="testimonial-quote">"</div>
-        <div class="stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-        </div>
-        <p class="testimonial-text">
-          仕事が忙しくて継続できるか不安でしたが、<em>LINEでいつでも質問できる環境が最高</em>。「なぜこのトレーニングをするのか」まで教えてくれるので、自分で考えて動けるようになりました。
-        </p>
-        <div class="testimonial-divider"></div>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">👨‍💼</div>
-          <div>
-            <div class="testimonial-name">佐藤 隆一</div>
-            <div class="testimonial-detail">IT企業管理職 / 42歳 / 1年継続中</div>
-          </div>
-        </div>
+        <!-- TODO: ここにGoogle FormのURLを貼り付け -->
+        <a href="#" class="cta-button cta-button-invert">無料Zoom問診の登録はこちら</a>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="faq-header reveal">
-      <div class="section-tag">FAQ</div>
-      <h2 class="section-title">
-        FREQUENTLY<br>
-        <span class="outline">ASKED</span>
-      </h2>
-      <p class="faq-lead">よくいただくご質問にお答えします。</p>
-    </div>
-
-    <div class="faq-list">
-      <details class="faq-item reveal">
-        <summary>
-          <span class="faq-q">Q.</span>
-          <span class="faq-question">運動初心者でもついていけますか？</span>
-          <span class="faq-toggle"></span>
-        </summary>
-        <div class="faq-answer">
-          <p>はい、全く問題ありません。クライアントの約半数は運動未経験からスタートしています。フォーム指導は基礎の基礎から丁寧に行うので、ジムに行ったことがない方でも安心してご参加いただけます。</p>
-        </div>
-      </details>
-
-      <details class="faq-item reveal">
-        <summary>
-          <span class="faq-q">Q.</span>
-          <span class="faq-question">結果が出るまでどのくらいかかりますか？</span>
-          <span class="faq-toggle"></span>
-        </summary>
-        <div class="faq-answer">
-          <p>個人差はありますが、最短で4〜8週間で見た目の変化を実感される方が多いです。体脂肪率・筋肉量の明確な改善は3ヶ月目以降に顕著になります。最短ルートで結果を出すためのプログラムをご提案します。</p>
-        </div>
-      </details>
-
-      <details class="faq-item reveal">
-        <summary>
-          <span class="faq-q">Q.</span>
-          <span class="faq-question">仕事が忙しくても続けられますか？</span>
-          <span class="faq-toggle"></span>
-        </summary>
-        <div class="faq-answer">
-          <p>はい。週2〜3回、1回60分の時間が確保できれば十分です。出張や残業の多いサラリーマンの方が多く継続されており、オンラインコーチングを活用すれば場所を選ばず継続可能です。</p>
-        </div>
-      </details>
-
-      <details class="faq-item reveal">
-        <summary>
-          <span class="faq-q">Q.</span>
-          <span class="faq-question">食事制限が厳しいのは苦手です…</span>
-          <span class="faq-toggle"></span>
-        </summary>
-        <div class="faq-answer">
-          <p>厳しい食事制限は一切行いません。コンビニ・外食・会食でも実践できる「選び方の基準」をお伝えし、ストレスなく続けられる食事術を共有します。お酒も完全にNGではありません。</p>
-        </div>
-      </details>
-
-      <details class="faq-item reveal">
-        <summary>
-          <span class="faq-q">Q.</span>
-          <span class="faq-question">カウンセリングは無料ですか？</span>
-          <span class="faq-toggle"></span>
-        </summary>
-        <div class="faq-answer">
-          <p>はい、初回のZoomカウンセリング（60分）は完全無料です。現状のヒアリング・目標設定・最適プランのご提案までを行います。強引な勧誘は一切ありませんのでご安心ください。</p>
-        </div>
-      </details>
-
-      <details class="faq-item reveal">
-        <summary>
-          <span class="faq-q">Q.</span>
-          <span class="faq-question">オンラインだけでも効果はありますか？</span>
-          <span class="faq-toggle"></span>
-        </summary>
-        <div class="faq-answer">
-          <p>十分に効果が出ます。動画によるフォームチェック、毎週のチェックイン、LINEでの24時間サポートを組み合わせることで、対面と変わらない成果を実現しているクライアントが多数います。</p>
-        </div>
-      </details>
-
-      <details class="faq-item reveal">
-        <summary>
-          <span class="faq-q">Q.</span>
-          <span class="faq-question">途中で解約はできますか？</span>
-          <span class="faq-toggle"></span>
-        </summary>
-        <div class="faq-answer">
-          <p>月額プランは月単位での解約が可能です。継続を強制することはありません。ただし、体の変化には最低3ヶ月の継続を推奨しています。</p>
-        </div>
-      </details>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="cta">
-    <div class="cta-bg"></div>
-    <div class="cta-content reveal">
-      <div class="section-tag" style="justify-content:center;">Free Counseling</div>
-      <h2 class="cta-title">
-        START YOUR<br>
-        <span style="background:linear-gradient(135deg,var(--orange),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">JOURNEY</span><br>
-        TODAY
-      </h2>
-      <p class="cta-sub">
-        まずは無料Zoomカウンセリング（60分）から。<br>
-        あなたの目標とライフスタイルをヒアリングし、最適なプランをご提案します。
-      </p>
-      <form class="cta-form" onsubmit="return false;">
-        <input type="email" class="cta-input" placeholder="メールアドレスを入力">
-        <button type="submit" class="cta-btn">Zoomカウンセリング申込 →</button>
-      </form>
-      <p class="cta-note">※ 入力情報は個人情報保護方針に基づき適切に管理されます</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-info reveal">
-      <div class="section-tag">Contact</div>
-      <h2 class="section-title">
-        GET IN<br>
-        <span class="outline">TOUCH</span>
-      </h2>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div>
-            <div class="contact-label">Location</div>
-            <div class="contact-value">東京都渋谷区恵比寿 / オンライン全国対応</div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <div class="contact-label">Phone</div>
-            <div class="contact-value">090-XXXX-XXXX</div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">📧</div>
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value">info@yukitrainer.com</div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">🕐</div>
-          <div>
-            <div class="contact-label">Hours</div>
-            <div class="contact-value">月〜土 6:00 - 22:00（日曜休）</div>
-          </div>
-        </div>
-      </div>
-      <div class="social-links">
-        <a href="#" class="social-link">📸</a>
-        <a href="#" class="social-link">🐦</a>
-        <a href="#" class="social-link">▶️</a>
-        <a href="#" class="social-link">💼</a>
-      </div>
-    </div>
-
-    <div class="contact-form reveal">
-      <div class="form-title">SEND MESSAGE</div>
-      <form onsubmit="return false;">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">お名前</label>
-            <input type="text" class="form-control" placeholder="田中 太郎">
-          </div>
-          <div class="form-group">
-            <label class="form-label">年齢</label>
-            <input type="text" class="form-control" placeholder="30代">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">メールアドレス</label>
-          <input type="email" class="form-control" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label class="form-label">目標・ご要望</label>
-          <select class="form-control">
-            <option value="" disabled selected>目標を選択してください</option>
-            <option>ダイエット・体脂肪削減</option>
-            <option>筋肉量アップ・バルクアップ</option>
-            <option>競技パフォーマンス向上</option>
-            <option>姿勢改善・ボディメイク</option>
-            <option>健康維持・体力向上</option>
-            <option>産後体型リカバリー</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">メッセージ</label>
-          <textarea class="form-control" placeholder="現在の状況やご質問など、お気軽にご記入ください"></textarea>
-        </div>
-        <button type="submit" class="form-submit">Zoomカウンセリング申込 →</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-logo">YT TRAINER</div>
-    <p class="footer-copy">© 2026 Yuki Tanaka Personal Training. All Rights Reserved.</p>
-    <ul class="footer-links">
-      <li><a href="#">プライバシーポリシー</a></li>
-      <li><a href="#">特定商取引法</a></li>
-      <li><a href="#">利用規約</a></li>
-    </ul>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <small>© Personal Training. All Rights Reserved.</small>
   </footer>
 
-  <script src="script.js" defer></script>
+  <!-- jQuery 3.7.1（将来の拡張用） -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Original script -->
+  <script src="script.js"></script>
 </body>
 </html>
