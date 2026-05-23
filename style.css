@@ -376,13 +376,15 @@ p {
 
 .concern-img {
   aspect-ratio: 1 / 1;
-  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
 }
 
 .concern-title {
   font-size: 1.05rem;
   margin-bottom: 0.8rem;
   letter-spacing: 0.02em;
+  min-height: 3.2em;
 }
 
 .concern-desc {
