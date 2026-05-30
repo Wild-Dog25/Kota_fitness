@@ -851,6 +851,11 @@ p {
 
 .profile-img {
   aspect-ratio: 3 / 4;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
 }
 
 .profile-text-row {
