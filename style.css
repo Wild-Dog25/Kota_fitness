@@ -187,6 +187,32 @@ p {
   }
 }
 
+/* LINE green CTA */
+.cta-button.cta-line {
+  background: #06C755;
+  box-shadow: 0 8px 0 #04994b, 0 12px 25px rgba(6, 199, 85, 0.3);
+  animation: floatBtnLine 2.4s ease-in-out infinite;
+}
+
+.cta-button.cta-line:hover {
+  color: #fff;
+}
+
+.cta-button.cta-line::after {
+  content: '→';
+}
+
+@keyframes floatBtnLine {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 8px 0 #04994b, 0 12px 25px rgba(6, 199, 85, 0.3);
+  }
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 0 #04994b, 0 22px 35px rgba(6, 199, 85, 0.5);
+  }
+}
+
 /* Inverted CTA (final section) */
 .cta-button-invert {
   background: #fff;
