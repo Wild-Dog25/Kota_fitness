@@ -741,6 +741,7 @@ p {
 .gift-img {
   margin: 0 auto 2rem;
   max-width: 880px;
+  width: 100%;
 }
 
 .placeholder-img.gift-img {
@@ -750,10 +751,11 @@ p {
 }
 
 img.gift-img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   border: 3px solid var(--orange);
+  box-sizing: border-box;
 }
 
 .gift-howto {
